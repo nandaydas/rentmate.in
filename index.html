@@ -20,12 +20,36 @@
     />
     <meta name="robots" content="index, follow" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Rentmate - Coming Soon" />
+    <meta
+      property="og:description"
+      content="Rentmate is building the ultimate decentralized bridge between rent seekers and rent givers, powered by cutting-edge AI. Say goodbye to rental hassles and hello to your perfect Rentmate."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rentmate.in/" />
+    <meta property="og:site_name" content="Rentmate" />
+    <meta property="og:locale" content="en_IN" />
+    <meta
+      property="og:image"
+      content="assets\images\app_logo.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Rentmate — Decentralized rental platform"
+    />
+
+    
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+
+    <link rel="icon" type="image/x-icon" href="assets\images\favicon.ico">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/custom.css" />
+
     <script>
       tailwind.config = {
         theme: {
@@ -84,12 +108,9 @@
       class="w-full py-6 px-6 md:px-12 flex justify-between items-center relative z-10"
     >
       <div class="flex items-center gap-2">
-        <div class="bg-brand-500 text-white p-2 rounded-lg shadow-lg">
-          <i class="fa-solid fa-house-chimney text-xl"></i>
-        </div>
-        <span class="text-2xl font-bold tracking-tighter text-gray-900"
-          >Rent<span class="text-brand-500">mate</span>.in</span
-        >
+        <a href="/" class="inline-flex items-center" aria-label="Rentmate home">
+          <img src="assets/images/rentmate_logo.png" alt="Rentmate" class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain w-auto max-w-[280px]" />
+        </a>
       </div>
       <a
         href="mailto:contact@rentmate.in"
@@ -122,7 +143,7 @@
 
         <!-- Main Heading -->
         <h1
-          class="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 mb-6"
+          class="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6"
         >
           A Solution to all <br />
           <span
@@ -133,7 +154,7 @@
 
         <!-- Description -->
         <p
-          class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+          class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
           We are building the ultimate
           <strong class="text-brand-600">Decentralized</strong> bridge between
@@ -203,7 +224,7 @@
               />
               <button
                 type="submit"
-                class="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5"
+                class="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 whitespace-nowrap"
               >
                 Notify Me
               </button>
@@ -222,6 +243,23 @@
         </div>
       </div>
     </main>
+
+    <!-- Recognition Banner -->
+    <section class="bg-white border-t border-gray-100 py-6">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="flex flex-col items-center gap-3">
+          <span class="text-sm text-gray-500 font-medium">Recognized & Funded By</span>
+          <img 
+            src="assets/images/startup_tripura.png" 
+            alt="Startup Tripura" 
+            class="h-12 sm:h-14 object-contain"
+          />
+          <p class="text-xs text-gray-400 max-w-2xl">
+            Proudly supported by Startup Tripura in our mission to revolutionize the rental ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Feature Teasers -->
     <section class="bg-white py-16 border-t border-gray-100">
@@ -311,32 +349,31 @@
       >
         <div class="text-center md:text-left">
           <h4 class="text-white font-bold text-xl mb-1">Rentmate.in</h4>
-          <p class="text-sm mb-1">A Solution to all Rental Problems.</p>
           <p class="text-xs text-gray-600">
-            RentMate Technologies Private Limited
+            RentMate Technologies Pvt. Ltd.
           </p>
         </div>
 
-        <div class="flex gap-6">
+        <div class="flex gap-6 items-center">
           <!-- Social Placeholders -->
           <a
             href="https://www.facebook.com/rentmate.technologies"
-            class="hover:text-brand-500 transition"
+            class="hover:text-brand-500 transition flex items-center justify-center"
             ><i class="fa-brands fa-facebook text-xl"></i
           ></a>
           <a
             href="https://x.com/RentMate"
-            class="hover:text-brand-500 transition"
+            class="hover:text-brand-500 transition flex items-center justify-center"
             ><i class="fa-brands fa-twitter text-xl"></i
           ></a>
           <a
             href="https://www.instagram.com/rentmate.official/"
-            class="hover:text-brand-500 transition"
+            class="hover:text-brand-500 transition flex items-center justify-center"
             ><i class="fa-brands fa-instagram text-xl"></i
           ></a>
           <a
             href="https://www.linkedin.com/company/rentmate-technologies/"
-            class="hover:text-brand-500 transition"
+            class="hover:text-brand-500 transition flex items-center justify-center"
             ><i class="fa-brands fa-linkedin text-xl"></i
           ></a>
         </div>
@@ -356,7 +393,7 @@
         </div>
       </div>
       <div class="text-center text-xs text-gray-600 mt-8">
-        &copy; 2025 RentMate Technologies Private Limited. All rights reserved.
+        &copy; 2025 RentMate Technologies Pvt. Ltd. All rights reserved.
       </div>
     </footer>
 
