@@ -1,0 +1,32 @@
+{
+  "name": "rentmate-coming-soon",
+  "version": "1.0.0",
+  "description": "Coming soon page for Rentmate - the decentralized rental platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nandaydas/rentmate.in.git"
+  },
+  "keywords": [
+    "rental",
+    "decentralized",
+    "coming-soon",
+    "real-estate",
+    "ai",
+    "blockchain"
+  ],
+  "author": "Nanday Das <contact@rentmate.in>",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/nandaydas/rentmate.in/issues"
+  },
+  "homepage": "https://rentmate.in",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

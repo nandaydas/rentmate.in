@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -341,66 +342,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-      // Email Success Message Logic
-      function showSuccess() {
-        const msg = document.getElementById("success-msg");
-        const btn = document.querySelector('button[type="submit"]');
-        const input = document.querySelector('input[type="email"]');
-
-        // Simulate loading/sending
-        btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i>';
-
-        setTimeout(() => {
-          msg.classList.remove("hidden");
-          btn.innerHTML = "Subscribed!";
-          btn.classList.add("bg-green-600", "hover:bg-green-700");
-          btn.classList.remove("bg-brand-600", "hover:bg-brand-700");
-          input.value = "";
-        }, 1000);
-      }
-
-      // Countdown Timer Logic - Wrapped in IIFE to prevent global variable collisions
-      (function () {
-        // Set the date we're counting down to (100 days from now)
-        const countDownDate = new Date();
-        countDownDate.setDate(countDownDate.getDate() + 100);
-
-        const x = setInterval(function () {
-          const now = new Date().getTime();
-          const distance = countDownDate - now;
-
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor(
-            (distance % (1000 * 60 * 60)) / (1000 * 60)
-          );
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          const daysEl = document.getElementById("days");
-          const hoursEl = document.getElementById("hours");
-          const minutesEl = document.getElementById("minutes");
-          const secondsEl = document.getElementById("seconds");
-
-          if (daysEl) daysEl.innerHTML = days < 10 ? "0" + days : days;
-          if (hoursEl) hoursEl.innerHTML = hours < 10 ? "0" + hours : hours;
-          if (minutesEl)
-            minutesEl.innerHTML = minutes < 10 ? "0" + minutes : minutes;
-          if (secondsEl)
-            secondsEl.innerHTML = seconds < 10 ? "0" + seconds : seconds;
-
-          if (distance < 0) {
-            clearInterval(x);
-            const grid = document.querySelector(".grid");
-            if (grid)
-              grid.innerHTML =
-                "<div class='col-span-4 text-center text-2xl font-bold text-brand-600'>We are Live!</div>";
-          }
-        }, 1000);
-      })();
-    </script>
-    <script src="./social_links.js"></script>
+    <script src="assets/js/email-form.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/social-links.js"></script>
   </body>
 </html>
