@@ -2,18 +2,23 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCE1FLRV09"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WCE1FLRV09"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-WCE1FLRV09');
+      gtag("config", "G-WCE1FLRV09");
     </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rentmate - Coming Soon</title>
+    <title>Rentmate - A Solution to all Rental Problems</title>
 
     <!-- SEO Meta Tags -->
     <meta
@@ -31,7 +36,10 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Social -->
-    <meta property="og:title" content="Rentmate - Coming Soon" />
+    <meta
+      property="og:title"
+      content="Rentmate - A Solution to all Rental Problems"
+    />
     <meta
       property="og:description"
       content="Rentmate is building the ultimate decentralized bridge between rent seekers and rent givers, powered by cutting-edge AI. Say goodbye to rental hassles and hello to your perfect Rentmate."
@@ -40,23 +48,19 @@
     <meta property="og:url" content="https://rentmate.in/" />
     <meta property="og:site_name" content="Rentmate" />
     <meta property="og:locale" content="en_IN" />
-    <meta
-      property="og:image"
-      content="assets\images\app_logo.png"
-    />
+    <meta property="og:image" content="assets\images\app_logo.png" />
     <meta
       property="og:image:alt"
       content="Rentmate — Decentralized rental platform"
     />
 
-    
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/x-icon" href="assets\images\favicon.ico">
-    
+    <link rel="icon" type="image/x-icon" href="assets\images\favicon.ico" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/custom.css" />
 
@@ -109,7 +113,6 @@
         }
       }
     </style>
-
   </head>
   <body
     class="bg-gray-50 text-gray-800 overflow-x-hidden flex flex-col min-h-screen"
@@ -120,7 +123,11 @@
     >
       <div class="flex items-center gap-2">
         <a href="/" class="inline-flex items-center" aria-label="Rentmate home">
-          <img src="assets/images/rentmate_logo.png" alt="Rentmate" class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain w-auto max-w-[280px]" />
+          <img
+            src="assets/images/rentmate_logo.png"
+            alt="Rentmate"
+            class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain w-auto max-w-[280px]"
+          />
         </a>
       </div>
       <a
@@ -176,46 +183,58 @@
 
         <!-- Coming Soon Progress/Timer -->
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-12"
+          class="grid grid-cols-4 gap-2 sm:gap-4 max-w-lg sm:max-w-2xl mx-auto mb-12"
         >
           <div
-            class="bg-white p-4 rounded-xl shadow-md border-b-4 border-brand-500"
+            class="bg-white p-2 sm:p-4 rounded-lg sm:rounded-xl shadow-md border-b-4 border-brand-500"
           >
-            <span class="block text-3xl font-bold text-gray-800" id="days"
+            <span
+              class="block text-xl sm:text-3xl font-bold text-gray-800"
+              id="days"
               >00</span
             >
-            <span class="text-xs text-gray-500 uppercase tracking-wider"
+            <span
+              class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider"
               >Days</span
             >
           </div>
           <div
-            class="bg-white p-4 rounded-xl shadow-md border-b-4 border-brand-500"
+            class="bg-white p-2 sm:p-4 rounded-lg sm:rounded-xl shadow-md border-b-4 border-brand-500"
           >
-            <span class="block text-3xl font-bold text-gray-800" id="hours"
+            <span
+              class="block text-xl sm:text-3xl font-bold text-gray-800"
+              id="hours"
               >00</span
             >
-            <span class="text-xs text-gray-500 uppercase tracking-wider"
+            <span
+              class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider"
               >Hours</span
             >
           </div>
           <div
-            class="bg-white p-4 rounded-xl shadow-md border-b-4 border-brand-500"
+            class="bg-white p-2 sm:p-4 rounded-lg sm:rounded-xl shadow-md border-b-4 border-brand-500"
           >
-            <span class="block text-3xl font-bold text-gray-800" id="minutes"
+            <span
+              class="block text-xl sm:text-3xl font-bold text-gray-800"
+              id="minutes"
               >00</span
             >
-            <span class="text-xs text-gray-500 uppercase tracking-wider"
-              >Minutes</span
+            <span
+              class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider"
+              >Min</span
             >
           </div>
           <div
-            class="bg-white p-4 rounded-xl shadow-md border-b-4 border-brand-500"
+            class="bg-white p-2 sm:p-4 rounded-lg sm:rounded-xl shadow-md border-b-4 border-brand-500"
           >
-            <span class="block text-3xl font-bold text-gray-800" id="seconds"
+            <span
+              class="block text-xl sm:text-3xl font-bold text-gray-800"
+              id="seconds"
               >00</span
             >
-            <span class="text-xs text-gray-500 uppercase tracking-wider"
-              >Seconds</span
+            <span
+              class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider"
+              >Sec</span
             >
           </div>
         </div>
@@ -259,14 +278,17 @@
     <section class="bg-white border-t border-gray-100 py-6">
       <div class="max-w-4xl mx-auto px-6 text-center">
         <div class="flex flex-col items-center gap-3">
-          <span class="text-sm text-gray-500 font-medium">Recognized & Funded By</span>
-          <img 
-            src="assets/images/startup_tripura.png" 
-            alt="Startup Tripura" 
+          <span class="text-sm text-gray-500 font-medium"
+            >Recognized & Funded By</span
+          >
+          <img
+            src="assets/images/startup_tripura.png"
+            alt="Startup Tripura"
             class="h-12 sm:h-14 object-contain"
           />
           <p class="text-xs text-gray-400 max-w-2xl">
-            Proudly supported by Startup Tripura in our mission to revolutionize the rental ecosystem.
+            Proudly supported by Startup Tripura in our mission to revolutionize
+            the rental ecosystem.
           </p>
         </div>
       </div>
@@ -360,9 +382,7 @@
       >
         <div class="text-center md:text-left">
           <h4 class="text-white font-bold text-xl mb-1">Rentmate.in</h4>
-          <p class="text-xs text-gray-600">
-            RentMate Technologies Pvt. Ltd.
-          </p>
+          <p class="text-xs text-gray-600">RentMate Technologies Pvt. Ltd.</p>
         </div>
 
         <div class="flex gap-6 items-center">

@@ -7,9 +7,9 @@
  * Countdown Timer Logic
  */
 function initializeCountdown() {
-  // Set the date we're counting down to (100 days from now)
-  const countDownDate = new Date();
-  countDownDate.setDate(countDownDate.getDate() + 100);
+  // Set a fixed launch date - March 5, 2025 (100 days from Nov 24, 2024)
+  // You can change this date as needed
+  const countDownDate = new Date("2026-03-05T00:00:00").getTime();
 
   const timer = setInterval(function () {
     const now = new Date().getTime();
