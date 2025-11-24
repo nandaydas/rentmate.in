@@ -3,9 +3,6 @@
  * This file contains site-specific styles that extend Tailwind CSS
  */
 
-/* Custom Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
-
 /* Root Variables */
 :root {
   --brand-orange: #f97316;
@@ -15,7 +12,8 @@
 
 /* Base Styles */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-display: swap;
 }
 
 /* Animated Background Blobs */

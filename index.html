@@ -54,15 +54,52 @@
       content="Rentmate — Decentralized rental platform"
     />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
 
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets\images\favicon.ico" />
 
+    <!-- Load fonts asynchronously to prevent render blocking -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+    /></noscript>
+
+    <!-- Load Font Awesome asynchronously -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /></noscript>
+
+    <!-- Tailwind CSS - keep as is for now -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Load custom CSS asynchronously -->
+    <link
+      rel="preload"
+      href="assets/css/custom.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="assets/css/custom.css" /></noscript>
 
     <script>
       tailwind.config = {
@@ -89,13 +126,14 @@
         },
       };
     </script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <style>
       body {
-        font-family: "Inter", sans-serif;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      /* Font loading optimization */
+      .font-display-optional {
+        font-display: optional;
       }
       .blob {
         position: absolute;
@@ -124,7 +162,7 @@
       <div class="flex items-center gap-2">
         <a href="/" class="inline-flex items-center" aria-label="Rentmate home">
           <img
-            src="assets/images/rentmate_logo.png"
+            src="assets/images/rentmate_logo.webp"
             alt="Rentmate"
             class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain w-auto max-w-[280px]"
           />
@@ -282,7 +320,7 @@
             >Recognized & Funded By</span
           >
           <img
-            src="assets/images/startup_tripura.png"
+            src="assets/images/startup_tripura.webp"
             alt="Startup Tripura"
             class="h-12 sm:h-14 object-contain"
           />
