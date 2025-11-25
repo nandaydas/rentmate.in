@@ -1,0 +1,37 @@
+# Robots.txt for Rentmate.in
+# This file tells search engines which pages they can and cannot crawl
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines to crawl everything
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow crawling of certain directories (if they exist in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow crawling of assets
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Sitemap location (create this in the future)
+Sitemap: https://rentmate.in/sitemap.xml
+
+# Crawl delay (optional - be respectful to servers)
+# Crawl-delay: 1
